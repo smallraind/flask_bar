@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+</head>
+<body>
+    {% for post in posts %}
+        <h1>{{post.标题}}}</h1>
+        <p>由{{post.发帖人}}}在{{post.时间}}}发布</p>
+        <p>{{post.内容}}</p>
+    {% endfor %}
+</body>
+</html>
